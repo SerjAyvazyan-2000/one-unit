@@ -1,84 +1,96 @@
 <!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Организация свадеб и мероприятий в Иркутске | One Unit</title>
-  <meta name="description" content="One Unit — организация свадеб, координация и другие мероприятия в Иркутске. Портфолио, услуги и этапы подготовки. Обсудите ваше событие с агентством.">
+<html lang="ru" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Организация свадеб и мероприятий в Иркутске | One Unit</title>
+    <meta
+      name="description"
+      content="One Unit — организация свадеб, координация и другие мероприятия в Иркутске. Портфолио, услуги и этапы подготовки. Обсудите ваше событие с агентством."
+    />
 
-  <!-- ПРЕДПРОСМОТР: снять noindex только на рабочем домене -->
-  <meta name="robots" content="noindex, nofollow">
-  <!-- CANONICAL: раскомментировать после выбора домена, заменить DOMAIN -->
-  <!-- <link rel="canonical" href="https://DOMAIN/"> -->
+    <!-- ПРЕДПРОСМОТР: снять noindex только на рабочем домене -->
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- CANONICAL: раскомментировать после выбора домена, заменить DOMAIN -->
+    <!-- <link rel="canonical" href="https://DOMAIN/"> -->
 
-  <meta property="og:type" content="website">
-  <meta property="og:locale" content="ru_RU">
-  <meta property="og:site_name" content="One Unit">
-  <meta property="og:title" content="Организация свадеб и мероприятий в Иркутске | One Unit">
-  <meta property="og:description" content="Организация свадеб, координация и другие мероприятия в Иркутске.">
-  <!-- og:url и og:image требуют абсолютных адресов рабочего домена -->
-  <!-- <meta property="og:url" content="https://DOMAIN/"> -->
-  <!-- <meta property="og:image" content="https://DOMAIN/assets/images/og-image.png"> -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="One Unit" />
+    <meta
+      property="og:title"
+      content="Организация свадеб и мероприятий в Иркутске | One Unit"
+    />
+    <meta
+      property="og:description"
+      content="Организация свадеб, координация и другие мероприятия в Иркутске."
+    />
+    <!-- og:url и og:image требуют абсолютных адресов рабочего домена -->
+    <!-- <meta property="og:url" content="https://DOMAIN/"> -->
+    <!-- <meta property="og:image" content="https://DOMAIN/assets/images/og-image.png"> -->
 
-  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- JSON-LD: заменить DOMAIN; telephone добавить только после подтверждения -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+    <!-- JSON-LD: заменить DOMAIN; telephone добавить только после подтверждения -->
+    <script type="application/ld+json">
       {
-        "@type": "Organization",
-        "@id": "https://DOMAIN/#organization",
-        "name": "One Unit",
-        "url": "https://DOMAIN/",
-        "logo": "https://DOMAIN/assets/images/logo.png",
-        "description": "Организация и координация свадеб и других мероприятий в Иркутске.",
-        "areaServed": { "@type": "City", "name": "Иркутск" },
-        "sameAs": [
-          "https://vk.ru/oneunitirk",
-          "https://irkutsk.gorko.ru/организаторы/1665391/"
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://DOMAIN/#organization",
+            "name": "One Unit",
+            "url": "https://DOMAIN/",
+            "logo": "https://DOMAIN/assets/images/logo.png",
+            "description": "Организация и координация свадеб и других мероприятий в Иркутске.",
+            "areaServed": { "@type": "City", "name": "Иркутск" },
+            "sameAs": [
+              "https://vk.ru/oneunitirk",
+              "https://irkutsk.gorko.ru/организаторы/1665391/"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://DOMAIN/#website",
+            "url": "https://DOMAIN/",
+            "name": "One Unit",
+            "inLanguage": "ru",
+            "publisher": { "@id": "https://DOMAIN/#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://DOMAIN/#webpage",
+            "url": "https://DOMAIN/",
+            "name": "Организация свадеб и мероприятий в Иркутске | One Unit",
+            "inLanguage": "ru",
+            "isPartOf": { "@id": "https://DOMAIN/#website" },
+            "about": { "@id": "https://DOMAIN/#organization" }
+          },
+          {
+            "@type": "Service",
+            "name": "Организация свадьбы",
+            "serviceType": "Организация свадеб",
+            "areaServed": { "@type": "City", "name": "Иркутск" },
+            "provider": { "@id": "https://DOMAIN/#organization" }
+          },
+          {
+            "@type": "Service",
+            "name": "Координация мероприятия",
+            "serviceType": "Координация мероприятий",
+            "areaServed": { "@type": "City", "name": "Иркутск" },
+            "provider": { "@id": "https://DOMAIN/#organization" }
+          }
         ]
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://DOMAIN/#website",
-        "url": "https://DOMAIN/",
-        "name": "One Unit",
-        "inLanguage": "ru",
-        "publisher": { "@id": "https://DOMAIN/#organization" }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://DOMAIN/#webpage",
-        "url": "https://DOMAIN/",
-        "name": "Организация свадеб и мероприятий в Иркутске | One Unit",
-        "inLanguage": "ru",
-        "isPartOf": { "@id": "https://DOMAIN/#website" },
-        "about": { "@id": "https://DOMAIN/#organization" }
-      },
-      {
-        "@type": "Service",
-        "name": "Организация свадьбы",
-        "serviceType": "Организация свадеб",
-        "areaServed": { "@type": "City", "name": "Иркутск" },
-        "provider": { "@id": "https://DOMAIN/#organization" }
-      },
-      {
-        "@type": "Service",
-        "name": "Координация мероприятия",
-        "serviceType": "Координация мероприятий",
-        "areaServed": { "@type": "City", "name": "Иркутск" },
-        "provider": { "@id": "https://DOMAIN/#organization" }
       }
-    ]
-  }
-  </script>
-  <script src="assets/js/main.js" defer></script>
-</head>
-<body>
-<!--
+    </script>
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+    <script src="assets/js/main.js" defer></script>
+  </head>
+  <body>
+    <!--
   ГДЕ МЕНЯТЬ ДАННЫЕ
   Телефон:  поиск "tel:+79041261283" и "+7 (904) 126-12-83" (шапка, первый экран, стоимость, FAQ, контакты, мобильная панель)
             ⚠ телефон ещё НЕ подтверждён владельцем — до подтверждения не выкладывать на рабочий домен.
@@ -87,265 +99,598 @@
   Фото:     assets/images/ — заменить заглушки реальными снимками, прописать width/height и alt
 -->
 
-<a class="skip-link" href="#main">Перейти к содержанию</a>
+    <a class="skip-link" href="#main">Перейти к содержанию</a>
 
-<header class="header" id="header">
-  <div class="container header__inner">
-    <a class="logo" href="#top" aria-label="One Unit — в начало страницы">
-      <!-- Заменить на <img src="assets/images/logo.png" alt="One Unit" width="…" height="…"> после получения исходника -->
-      <span class="logo__text">One Unit</span>
-    </a>
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a class="logo" href="#top" aria-label="One Unit — в начало страницы">
+           <img src="assets/images/logo2.png" alt="One Unit" width="…" height="…"> 
+        </a>
 
-    <nav class="nav" id="nav" aria-label="Основное меню">
-      <ul class="nav__list">
-        <li><a href="#services">Услуги</a></li>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#portfolio">Портфолио</a></li>
-        <li><a href="#pricing">Стоимость</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-      <div class="nav__contacts">
-        <a class="link-phone" href="tel:+79041261283" data-event="click_phone" data-place="header">+7 (904) 126-12-83</a>
-        <a class="btn btn--secondary btn--sm" href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="header">Написать ВКонтакте</a>
+        <nav class="nav" id="nav" aria-label="Основное меню">
+          <ul class="nav__list">
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#pricing">Стоимость</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+          <div class="nav__contacts">
+            <a
+              class="link-phone"
+              href="tel:+79041261283"
+              data-event="click_phone"
+              data-place="header"
+              >+7 (904) 126-12-83</a
+            >
+            <a
+              class="btn btn--secondary btn--sm"
+              href="https://vk.ru/oneunitirk"
+              target="_blank"
+              rel="noopener"
+              data-event="click_vk"
+              data-place="header"
+              >Написать ВКонтакте</a
+            >
+          </div>
+        </nav>
+
+        <a
+          class="header__vk-mobile btn btn--primary btn--sm"
+          href="https://vk.ru/oneunitirk"
+          target="_blank"
+          rel="noopener"
+          data-event="click_vk"
+          data-place="header_mobile"
+          >ВКонтакте</a
+        >
+        <button
+          class="burger"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Открыть меню"
+        >
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </nav>
+    </header>
 
-    <a class="header__vk-mobile btn btn--primary btn--sm" href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="header_mobile">ВКонтакте</a>
-    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Открыть меню">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<main id="main">
-
-  <!-- ПЕРВЫЙ ЭКРАН -->
-  <section class="hero" id="top">
-    <div class="container hero__inner">
-      <div class="hero__content">
-        <p class="eyebrow">Event-агентство · Иркутск</p>
-        <h1>Организация свадеб и мероприятий в&nbsp;Иркутске</h1>
-        <p class="hero__lead">One Unit — организация и координация вашего события. Обсудим идеи, формат и бюджет, чтобы вы могли уделить время самому празднику.</p>
-        <div class="actions">
-          <a class="btn btn--primary" href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="hero">Обсудить мероприятие</a>
-          <a class="btn btn--secondary" href="#portfolio">Посмотреть портфолио</a>
+    <main id="main">
+      <!-- ПЕРВЫЙ ЭКРАН -->
+      <section class="hero" id="top">
+        <div class="container hero__inner">
+          <div class="hero__content reveal">
+            <p class="eyebrow">Event-агентство · Иркутск</p>
+            <h1>Организация свадеб и мероприятий в&nbsp;Иркутске</h1>
+            <p class="hero__lead">
+              One Unit — организация и координация вашего события. Обсудим идеи,
+              формат и бюджет, чтобы вы могли уделить время самому празднику.
+            </p>
+            <div class="actions">
+              <a
+                class="btn btn--primary"
+                href="https://vk.ru/oneunitirk"
+                target="_blank"
+                rel="noopener"
+                data-event="click_vk"
+                data-place="hero"
+                >Обсудить мероприятие</a
+              >
+              <a class="btn btn--secondary" href="#portfolio"
+                >Посмотреть портфолио</a
+              >
+            </div>
+            <p class="hero__phone">
+              Или позвоните:
+              <a
+                href="tel:+79041261283"
+                data-event="click_phone"
+                data-place="hero"
+                >+7 (904) 126-12-83</a
+              >
+            </p>
+          </div>
+          <figure class="hero__media reveal reveal--delay">
+            <span class="watercolor watercolor--hero" aria-hidden="true"></span>
+            <!-- Заменить на реальный свадебный кадр из портфолио (вертикальный, от 800×1000) -->
+            <img
+              src="assets/images/hero-placeholder.webp"
+              alt="Место для свадебной фотографии из портфолио One Unit"
+              width="800"
+              height="1000"
+              fetchpriority="high"
+            />
+          </figure>
         </div>
-        <p class="hero__phone">Или позвоните: <a href="tel:+79041261283" data-event="click_phone" data-place="hero">+7 (904) 126-12-83</a></p>
-      </div>
-      <figure class="hero__media">
-        <span class="watercolor watercolor--hero" aria-hidden="true"></span>
-        <!-- Заменить на реальный свадебный кадр из портфолио (вертикальный, от 800×1000) -->
-        <img src="assets/images/hero-placeholder.svg" alt="Место для свадебной фотографии из портфолио One Unit" width="800" height="1000" fetchpriority="high">
-      </figure>
-    </div>
-  </section>
+      </section>
 
-  <!-- УСЛУГИ -->
-  <section class="section" id="services">
-    <div class="container">
-      <h2>Чем мы можем помочь</h2>
-      <div class="cards">
-        <article class="card card--accent">
-          <h3>Организация свадьбы</h3>
-          <p>Помощь в подготовке свадьбы: от обсуждения идеи до согласования организационных деталей.</p>
-          <a class="card__link" href="#pricing">Узнать стоимость</a>
-        </article>
-        <article class="card">
-          <h3>Координация мероприятия</h3>
-          <p>Помощь в день события: взаимодействие с подрядчиками, гостями и участниками мероприятия.</p>
-          <a class="card__link" href="#pricing">Узнать стоимость</a>
-        </article>
-        <article class="card">
-          <h3>Другие события</h3>
-          <p>Годовщины, дни рождения, выпускные и корпоративные мероприятия. Формат участия агентства обсуждается индивидуально.</p>
-          <a class="card__link" href="#contacts">Обсудить событие</a>
-        </article>
-      </div>
-      <p class="extra-line">Также: <strong>свадебный шоппинг</strong> и <strong>индивидуальный проект / фотосессия</strong>.</p>
-    </div>
-  </section>
+      <!-- УСЛУГИ -->
+      <section class="section" id="services">
+        <div class="container">
+          <h2 class="reveal">Чем мы можем помочь</h2>
+          <div class="cards">
+            <article class="reveal card card--accent">
+              <h3>Организация свадьбы</h3>
+              <p>
+                Помощь в подготовке свадьбы: от обсуждения идеи до согласования
+                организационных деталей.
+              </p>
+              <a class="card__link" href="#pricing">Узнать стоимость</a>
+            </article>
+            <article class="reveal card">
+              <h3>Координация мероприятия</h3>
+              <p>
+                Помощь в день события: взаимодействие с подрядчиками, гостями и
+                участниками мероприятия.
+              </p>
+              <a class="card__link" href="#pricing">Узнать стоимость</a>
+            </article>
+            <article class="reveal card">
+              <h3>Другие события</h3>
+              <p>
+                Годовщины, дни рождения, выпускные и корпоративные мероприятия.
+                Формат участия агентства обсуждается индивидуально.
+              </p>
+              <a class="card__link" href="#contacts">Обсудить событие</a>
+            </article>
+          </div>
+          <p class="extra-line">
+            Также: <strong>свадебный шоппинг</strong> и
+            <strong>индивидуальный проект / фотосессия</strong>.
+          </p>
+        </div>
+      </section>
 
-  <!-- ОБ АГЕНТСТВЕ -->
-  <section class="section section--pink" id="about">
-    <div class="container about">
-      <div class="about__text">
-        <h2>Ваше событие — с&nbsp;вниманием к&nbsp;деталям</h2>
-        <p>One Unit помогает в организации свадеб и других событий в Иркутске. Можно обсудить подготовку мероприятия или подключить координацию в день праздника. На первом этапе важно определить формат, пожелания и бюджет, а затем согласовать состав работы агентства.</p>
-      </div>
-      <ul class="points">
-        <li><h3>Формат под вашу задачу</h3><p>Обсуждаем, какое событие вы планируете и какая помощь нужна.</p></li>
-        <li><h3>Понятный состав работ</h3><p>Заранее согласуем, что входит в работу агентства.</p></li>
-        <li><h3>Организация и координация</h3><p>Подготовка события или помощь в сам день праздника.</p></li>
-      </ul>
-    </div>
-  </section>
+      <!-- ОБ АГЕНТСТВЕ -->
+      <section class="section section--pink" id="about">
+        <div class="container about">
+          <div class="about__text reveal">
+            <h2>Ваше событие — с&nbsp;вниманием к&nbsp;деталям</h2>
+            <p>
+              One Unit помогает в организации свадеб и других событий в
+              Иркутске. Можно обсудить подготовку мероприятия или подключить
+              координацию в день праздника. На первом этапе важно определить
+              формат, пожелания и бюджет, а затем согласовать состав работы
+              агентства.
+            </p>
+          </div>
+          <ul class="points">
+            <li class="reveal">
+              <h3>Формат под вашу задачу</h3>
+              <p>
+                Обсуждаем, какое событие вы планируете и какая помощь нужна.
+              </p>
+            </li>
+            <li class="reveal">
+              <h3>Понятный состав работ</h3>
+              <p>Заранее согласуем, что входит в работу агентства.</p>
+            </li>
+            <li class="reveal">
+              <h3>Организация и координация</h3>
+              <p>Подготовка события или помощь в сам день праздника.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
-  <!-- ПОРТФОЛИО -->
-  <section class="section" id="portfolio">
-    <div class="container">
-      <h2>Атмосфера наших мероприятий</h2>
-      <!-- Заменить заглушки реальными согласованными фото. Подписи — только фактические, без вымышленных кейсов. -->
-      <div class="gallery">
-        <figure class="gallery__item gallery__item--tall">
-          <img src="assets/images/photo-placeholder.svg" alt="Место для фото: общий план площадки" width="800" height="600" loading="lazy" decoding="async">
-          <figcaption>Общий план площадки</figcaption>
-        </figure>
-        <figure class="gallery__item">
-          <img src="assets/images/photo-placeholder.svg" alt="Место для фото: детали оформления" width="800" height="600" loading="lazy" decoding="async">
-          <figcaption>Детали оформления</figcaption>
-        </figure>
-        <figure class="gallery__item">
-          <img src="assets/images/photo-placeholder.svg" alt="Место для фото: эмоции гостей" width="800" height="600" loading="lazy" decoding="async">
-          <figcaption>Эмоции гостей</figcaption>
-        </figure>
-        <figure class="gallery__item">
-          <img src="assets/images/photo-placeholder.svg" alt="Место для фото: момент праздника" width="800" height="600" loading="lazy" decoding="async">
-          <figcaption>Момент праздника</figcaption>
-        </figure>
-      </div>
-    </div>
-  </section>
+      <!-- ПОРТФОЛИО -->
+      <section class="section" id="portfolio">
+        <div class="container">
+          <h2 class="reveal">Атмосфера наших мероприятий</h2>
+          <!-- Заменить заглушки реальными согласованными фото. Подписи — только фактические, без вымышленных кейсов. -->
+          <div class="gallery">
+            <figure class="reveal gallery__item gallery__item--tall">
+              <img
+                src="assets/images/photo-placeholder.webp"
+                alt="Место для фото: общий план площадки"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Общий план площадки</figcaption>
+            </figure>
+            <figure class="reveal gallery__item">
+              <img
+                src="assets/images/photo-placeholder2.webp"
+                alt="Место для фото: детали оформления"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Детали оформления</figcaption>
+            </figure>
+            <figure class="reveal gallery__item">
+              <img
+                src="assets/images/photo-placeholder3.webp"
+                alt="Место для фото: эмоции гостей"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Эмоции гостей</figcaption>
+            </figure>
+            <figure class="reveal gallery__item">
+              <img
+                src="assets/images/photo-placeholder4.jpg"
+                alt="Место для фото: момент праздника"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>Момент праздника</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
 
-  <!-- СТОИМОСТЬ -->
-  <section class="section section--soft" id="pricing">
-    <div class="container pricing">
-      <h2>Услуги и стоимость</h2>
-      <div class="table-wrap">
-        <table class="price-table">
-          <thead>
-            <tr><th scope="col">Услуга</th><th scope="col">Стоимость</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Организация свадьбы</td><td>По запросу</td></tr>
-            <tr><td>Координация мероприятия</td><td>По запросу</td></tr>
-            <tr><td>Свадебный шоппинг</td><td>По запросу</td></tr>
-            <tr><td>Индивидуальный проект / фотосессия</td><td>По запросу</td></tr>
-            <tr><td>Организация других мероприятий</td><td>Индивидуальный расчёт</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="pricing__note">Стоимость зависит от формата события и объёма участия агентства. Напишите нам или позвоните, чтобы обсудить ваш запрос.</p>
-      <div class="actions">
-        <a class="btn btn--primary" href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="pricing">Обсудить стоимость</a>
-        <a class="btn btn--secondary" href="tel:+79041261283" data-event="click_phone" data-place="pricing">Позвонить</a>
-      </div>
-    </div>
-  </section>
+      <!-- СТОИМОСТЬ -->
+      <section class="section section--soft" id="pricing">
+        <div class="container pricing">
+          <h2 class="reveal">Услуги и стоимость</h2>
+          <div class="table-wrap reveal">
+            <table class="price-table">
+              <thead>
+                <tr>
+                  <th scope="col">Услуга</th>
+                  <th scope="col">Стоимость</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Организация свадьбы</td>
+                  <td>По запросу</td>
+                </tr>
+                <tr>
+                  <td>Координация мероприятия</td>
+                  <td>По запросу</td>
+                </tr>
+                <tr>
+                  <td>Свадебный шоппинг</td>
+                  <td>По запросу</td>
+                </tr>
+                <tr>
+                  <td>Индивидуальный проект / фотосессия</td>
+                  <td>По запросу</td>
+                </tr>
+                <tr>
+                  <td>Организация других мероприятий</td>
+                  <td>Индивидуальный расчёт</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="pricing__note">
+            Стоимость зависит от формата события и объёма участия агентства.
+            Напишите нам или позвоните, чтобы обсудить ваш запрос.
+          </p>
+          <div class="actions">
+            <a
+              class="btn btn--primary"
+              href="https://vk.ru/oneunitirk"
+              target="_blank"
+              rel="noopener"
+              data-event="click_vk"
+              data-place="pricing"
+              >Обсудить стоимость</a
+            >
+            <a
+              class="btn btn--secondary"
+              href="tel:+79041261283"
+              data-event="click_phone"
+              data-place="pricing"
+              >Позвонить</a
+            >
+          </div>
+        </div>
+      </section>
 
-  <!-- ЭТАПЫ -->
-  <section class="section" id="process">
-    <div class="container">
-      <h2>С чего начинается подготовка</h2>
-      <ol class="steps">
-        <li><span class="steps__num" aria-hidden="true">1</span><h3>Знакомство</h3><p>Обсуждаем дату, формат и пожелания.</p></li>
-        <li><span class="steps__num" aria-hidden="true">2</span><h3>Объём работы</h3><p>Определяем нужную помощь и бюджет.</p></li>
-        <li><span class="steps__num" aria-hidden="true">3</span><h3>Подготовка</h3><p>Согласуем организационные решения.</p></li>
-        <li><span class="steps__num" aria-hidden="true">4</span><h3>День события</h3><p>Работаем по согласованному плану и формату участия.</p></li>
-      </ol>
-    </div>
-  </section>
+      <!-- ЭТАПЫ -->
+      <section class="section" id="process">
+        <div class="container">
+          <h2 class="reveal">С чего начинается подготовка</h2>
+          <ol class="steps">
+            <li class="reveal">
+              <span class="steps__num" aria-hidden="true">1</span>
+              <h3>Знакомство</h3>
+              <p>Обсуждаем дату, формат и пожелания.</p>
+            </li>
+            <li class="reveal">
+              <span class="steps__num" aria-hidden="true">2</span>
+              <h3>Объём работы</h3>
+              <p>Определяем нужную помощь и бюджет.</p>
+            </li>
+            <li class="reveal">
+              <span class="steps__num" aria-hidden="true">3</span>
+              <h3>Подготовка</h3>
+              <p>Согласуем организационные решения.</p>
+            </li>
+            <li class="reveal">
+              <span class="steps__num" aria-hidden="true">4</span>
+              <h3>День события</h3>
+              <p>Работаем по согласованному плану и формату участия.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-  <!-- ОТЗЫВЫ -->
-  <section class="section section--pink" id="reviews">
-    <div class="container reviews">
-      <span class="watercolor watercolor--reviews" aria-hidden="true"></span>
-      <h2>Отзывы о One Unit</h2>
-      <p>Отзывы клиентов опубликованы на независимой площадке и в нашем сообществе.</p>
-      <div class="actions actions--center">
-        <a class="btn btn--primary" href="https://irkutsk.gorko.ru/организаторы/1665391/" target="_blank" rel="noopener" data-event="click_gorko" data-place="reviews">Читать отзывы на Горько</a>
-        <a class="btn btn--secondary" href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="reviews">Открыть сообщество ВКонтакте</a>
+      <!-- ОТЗЫВЫ -->
+      <section class="section section--pink" id="reviews">
+        <div class="container reviews">
+          <span
+            class="watercolor watercolor--reviews"
+            aria-hidden="true"
+          ></span>
+          <h2>Отзывы о One Unit</h2>
+          <p>
+            Отзывы клиентов опубликованы на независимой площадке и в нашем
+            сообществе.
+          </p>
+          <div class="actions actions--center">
+            <a
+              class="btn btn--primary"
+              href="https://irkutsk.gorko.ru/организаторы/1665391/"
+              target="_blank"
+              rel="noopener"
+              data-event="click_gorko"
+              data-place="reviews"
+              >Читать отзывы на Горько</a
+            >
+            <a
+              class="btn btn--secondary"
+              href="https://vk.ru/oneunitirk"
+              target="_blank"
+              rel="noopener"
+              data-event="click_vk"
+              data-place="reviews"
+              >Открыть сообщество ВКонтакте</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <div class="container container--narrow">
+          <h2 class="reveal">Ответы на частые вопросы</h2>
+          <div class="faq">
+            <details class="reveal">
+              <summary>Какие мероприятия вы организуете?</summary>
+              <p>
+                Свадьбы, годовщины, дни рождения, выпускные и корпоративные
+                мероприятия. Подходящий формат участия агентства обсудим при
+                обращении.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Чем организация отличается от координации?</summary>
+              <p>
+                Организация связана с подготовкой события. Координация — с
+                взаимодействием участников и подрядчиков в день мероприятия.
+                Конкретный состав услуг согласуется отдельно.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Можно обратиться только за координацией?</summary>
+              <p>
+                Координация представлена как отдельная услуга One Unit.
+                Расскажите, что уже подготовлено, чтобы обсудить необходимую
+                помощь.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>От чего зависит стоимость?</summary>
+              <p>
+                От формата события, задач агентства и объёма работ. Стоимость
+                организации и общие расходы на мероприятие уточняются отдельно.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Входит ли банкет в стоимость организации?</summary>
+              <p>
+                Не следует считать расходы на банкет и других подрядчиков
+                автоматически включёнными в работу организатора. Состав
+                предложения и смету нужно уточнить при обсуждении мероприятия.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>За сколько времени до события обращаться?</summary>
+              <p>
+                Обратитесь, когда известны примерная дата и формат. Возможность
+                участия агентства и график подготовки уточняются индивидуально.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Что подготовить для первого разговора?</summary>
+              <p>
+                Примерную дату, город или площадку, формат события,
+                ориентировочное количество гостей, пожелания и предполагаемый
+                бюджет. Если часть деталей пока неизвестна, сообщите то, что уже
+                решили.
+              </p>
+            </details>
+            <details class="reveal">
+              <summary>Как связаться с One Unit?</summary>
+              <p>
+                Позвоните по номеру
+                <a
+                  href="tel:+79041261283"
+                  data-event="click_phone"
+                  data-place="faq"
+                  >+7 (904) 126-12-83</a
+                >
+                или напишите в
+                <a
+                  href="https://vk.ru/oneunitirk"
+                  target="_blank"
+                  rel="noopener"
+                  data-event="click_vk"
+                  data-place="faq"
+                  >сообщество ВКонтакте</a
+                >.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- КОНТАКТЫ -->
+      <section class="section section--soft" id="contacts">
+        <div class="container contacts">
+          <div>
+            <h2 class="reveal">Обсудим ваше мероприятие</h2>
+            <p>
+              Расскажите, какое событие вы планируете. Укажите примерную дату,
+              формат и пожелания.
+            </p>
+          </div>
+          <ul class="contacts__list reveal">
+            <li>
+              <span class="contacts__label">Агентство</span>One Unit, Иркутск
+            </li>
+            <li>
+              <span class="contacts__label">Телефон</span
+              ><a
+                href="tel:+79041261283"
+                data-event="click_phone"
+                data-place="contacts"
+                >+7 (904) 126-12-83</a
+              >
+            </li>
+            <li>
+              <span class="contacts__label">ВКонтакте</span
+              ><a
+                href="https://vk.ru/oneunitirk"
+                target="_blank"
+                rel="noopener"
+                data-event="click_vk"
+                data-place="contacts"
+                >vk.ru/oneunitirk</a
+              >
+            </li>
+            <li>
+              <span class="contacts__label">Горько</span
+              ><a
+                href="https://irkutsk.gorko.ru/организаторы/1665391/"
+                target="_blank"
+                rel="noopener"
+                data-event="click_gorko"
+                data-place="contacts"
+                >Профиль агентства</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div>
+          <a class="logo logo--footer" href="#top"
+            >
+            <img src="assets/images/logo2.png" alt="One Unit" width="…" height="…"> </a
+          >
+          <p>Организация свадеб и мероприятий в Иркутске</p>
+        </div>
+        <nav aria-label="Меню в подвале">
+          <ul class="footer__nav">
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#portfolio">Портфолио</a></li>
+            <li><a href="#pricing">Стоимость</a></li>
+            <li><a href="#faq">Вопросы</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="footer__contacts">
+          <a
+            href="tel:+79041261283"
+            data-event="click_phone"
+            data-place="footer"
+            >+7 (904) 126-12-83</a
+          >
+          <a
+            href="https://vk.ru/oneunitirk"
+            target="_blank"
+            rel="noopener"
+            data-event="click_vk"
+            data-place="footer"
+            >ВКонтакте</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section" id="faq">
-    <div class="container container--narrow">
-      <h2>Ответы на частые вопросы</h2>
-      <div class="faq">
+      <div class="container footer__bottom">
+        <span>© <span id="year">2026</span> One Unit</span>
+        <a href="#cookies" class="footer__cookie-link">Использование cookie</a>
+        <span class="footer__credit"
+          >Сайт разработан в студии
+          <a
+            href="https://studio-psi-olive.vercel.app/"
+            target="_blank"
+            rel="noopener"
+            >Сайтика</a
+          ></span
+        >
+      </div>
+      <div class="container footer__cookies" id="cookies">
         <details>
-          <summary>Какие мероприятия вы организуете?</summary>
-          <p>Свадьбы, годовщины, дни рождения, выпускные и корпоративные мероприятия. Подходящий формат участия агентства обсудим при обращении.</p>
-        </details>
-        <details>
-          <summary>Чем организация отличается от координации?</summary>
-          <p>Организация связана с подготовкой события. Координация — с взаимодействием участников и подрядчиков в день мероприятия. Конкретный состав услуг согласуется отдельно.</p>
-        </details>
-        <details>
-          <summary>Можно обратиться только за координацией?</summary>
-          <p>Координация представлена как отдельная услуга One Unit. Расскажите, что уже подготовлено, чтобы обсудить необходимую помощь.</p>
-        </details>
-        <details>
-          <summary>От чего зависит стоимость?</summary>
-          <p>От формата события, задач агентства и объёма работ. Стоимость организации и общие расходы на мероприятие уточняются отдельно.</p>
-        </details>
-        <details>
-          <summary>Входит ли банкет в стоимость организации?</summary>
-          <p>Не следует считать расходы на банкет и других подрядчиков автоматически включёнными в работу организатора. Состав предложения и смету нужно уточнить при обсуждении мероприятия.</p>
-        </details>
-        <details>
-          <summary>За сколько времени до события обращаться?</summary>
-          <p>Обратитесь, когда известны примерная дата и формат. Возможность участия агентства и график подготовки уточняются индивидуально.</p>
-        </details>
-        <details>
-          <summary>Что подготовить для первого разговора?</summary>
-          <p>Примерную дату, город или площадку, формат события, ориентировочное количество гостей, пожелания и предполагаемый бюджет. Если часть деталей пока неизвестна, сообщите то, что уже решили.</p>
-        </details>
-        <details>
-          <summary>Как связаться с One Unit?</summary>
-          <p>Позвоните по номеру <a href="tel:+79041261283" data-event="click_phone" data-place="faq">+7 (904) 126-12-83</a> или напишите в <a href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="faq">сообщество ВКонтакте</a>.</p>
+          <summary>Информация об использовании cookie</summary>
+          <p>
+            Cookie — небольшие файлы, которые браузер сохраняет на вашем
+            устройстве. Сайт One Unit использует их только для корректной работы
+            страницы, например чтобы запомнить, что вы закрыли уведомление о
+            cookie. Форм и сбора заявок на сайте нет.
+          </p>
+          <p>
+            Если на сайте будут подключены сервисы веб-аналитики, они могут
+            использовать cookie для обезличенной статистики посещений. Вы можете
+            отключить или удалить cookie в настройках своего браузера, при этом
+            сайт продолжит работать.
+          </p>
         </details>
       </div>
+    </footer>
+
+    <!-- Уведомление о cookie: показывается один раз, скрывается по кнопке -->
+    <div
+      class="cookie-banner"
+      id="cookie-banner"
+      role="region"
+      aria-label="Уведомление о cookie"
+      hidden
+    >
+      <p>
+        Мы используем cookie, чтобы сайт работал корректно.
+        <a href="#cookies">Подробнее</a>
+      </p>
+      <button type="button" class="btn btn--primary btn--sm" id="cookie-accept">
+        Понятно
+      </button>
     </div>
-  </section>
 
-  <!-- КОНТАКТЫ -->
-  <section class="section section--soft" id="contacts">
-    <div class="container contacts">
-      <div>
-        <h2>Обсудим ваше мероприятие</h2>
-        <p>Расскажите, какое событие вы планируете. Укажите примерную дату, формат и пожелания.</p>
-      </div>
-      <ul class="contacts__list">
-        <li><span class="contacts__label">Агентство</span>One Unit, Иркутск</li>
-        <li><span class="contacts__label">Телефон</span><a href="tel:+79041261283" data-event="click_phone" data-place="contacts">+7 (904) 126-12-83</a></li>
-        <li><span class="contacts__label">ВКонтакте</span><a href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="contacts">vk.ru/oneunitirk</a></li>
-        <li><span class="contacts__label">Горько</span><a href="https://irkutsk.gorko.ru/организаторы/1665391/" target="_blank" rel="noopener" data-event="click_gorko" data-place="contacts">Профиль агентства</a></li>
-      </ul>
+    <!-- Мобильная панель связи -->
+    <div class="mobile-bar">
+      <a
+        class="btn btn--secondary"
+        href="tel:+79041261283"
+        data-event="click_phone"
+        data-place="mobile_bar"
+        >Позвонить</a
+      >
+      <a
+        class="btn btn--primary"
+        href="https://vk.ru/oneunitirk"
+        target="_blank"
+        rel="noopener"
+        data-event="click_vk"
+        data-place="mobile_bar"
+        >ВКонтакте</a
+      >
     </div>
-  </section>
-
-</main>
-
-<footer class="footer">
-  <div class="container footer__inner">
-    <div>
-      <a class="logo logo--footer" href="#top"><span class="logo__text">One Unit</span></a>
-      <p>Организация свадеб и мероприятий в Иркутске</p>
-    </div>
-    <nav aria-label="Меню в подвале">
-      <ul class="footer__nav">
-        <li><a href="#services">Услуги</a></li>
-        <li><a href="#about">О нас</a></li>
-        <li><a href="#portfolio">Портфолио</a></li>
-        <li><a href="#pricing">Стоимость</a></li>
-        <li><a href="#faq">Вопросы</a></li>
-        <li><a href="#contacts">Контакты</a></li>
-      </ul>
-    </nav>
-    <div class="footer__contacts">
-      <a href="tel:+79041261283" data-event="click_phone" data-place="footer">+7 (904) 126-12-83</a>
-      <a href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="footer">ВКонтакте</a>
-    </div>
-  </div>
-  <div class="container footer__bottom">© <span id="year">2026</span> One Unit</div>
-</footer>
-
-<!-- Мобильная панель связи -->
-<div class="mobile-bar">
-  <a class="btn btn--secondary" href="tel:+79041261283" data-event="click_phone" data-place="mobile_bar">Позвонить</a>
-  <a class="btn btn--primary" href="https://vk.ru/oneunitirk" target="_blank" rel="noopener" data-event="click_vk" data-place="mobile_bar">ВКонтакте</a>
-</div>
-
-</body>
+  </body>
 </html>

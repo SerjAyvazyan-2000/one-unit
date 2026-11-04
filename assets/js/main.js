@@ -46,6 +46,55 @@
     });
   }
 
+  /* Плавное появление элементов при прокрутке */
+  var reveals = document.querySelectorAll('.reveal');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!('IntersectionObserver' in window) || reduce) {
+    reveals.forEach(function (el) { el.classList.add('is-visible'); });
+  } else {
+    // соседние элементы одной сетки появляются по очереди
+    reveals.forEach(function (el) {
+      var parent = el.parentElement;
+      var siblings = Array.prototype.filter.call(parent.children, function (c) { return c.classList.contains('reveal'); });
+      var i = siblings.indexOf(el);
+      if (siblings.length > 1 && i > 0 && !el.classList.contains('reveal--delay')) {
+        el.style.setProperty('--reveal-delay', Math.min(i * 90, 450) + 'ms');
+      }
+    });
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: '0px 0px -8% 0px', threshold: 0.12 });
+    reveals.forEach(function (el) { io.observe(el); });
+  }
+
+  /* Уведомление о cookie: запоминаем согласие на год */
+  var banner = document.getElementById('cookie-banner');
+  var accept = document.getElementById('cookie-accept');
+  function hasConsent() {
+    try { if (localStorage.getItem('ou_cookie_ok') === '1') return true; } catch (e) {}
+    return document.cookie.indexOf('ou_cookie_ok=1') !== -1;
+  }
+  if (banner && accept && !hasConsent()) {
+    banner.hidden = false;
+    accept.addEventListener('click', function () {
+      try { localStorage.setItem('ou_cookie_ok', '1'); } catch (e) {}
+      document.cookie = 'ou_cookie_ok=1; max-age=31536000; path=/; SameSite=Lax';
+      banner.hidden = true;
+    });
+  }
+  /* Ссылка «Подробнее» раскрывает блок с информацией о cookie */
+  document.querySelectorAll('a[href="#cookies"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      var d = document.querySelector('#cookies details');
+      if (d) d.open = true;
+    });
+  });
+
   /* Год в подвале */
   var year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
